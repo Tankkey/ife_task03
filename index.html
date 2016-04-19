@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ife_task03</title>
+<meta charset="utf-8" >
+<style>
+*{
+	padding:0;
+	margin:0;
+	font-size: 14px;
+}
+
+/* 重点：用position定位，父元素无法撑开
+.all{
+	margin: 20px ;
+	background-color: #eee;
+	border:1px solid #999;
+	padding: 20px;
+	position: relative;
+
+}
+.left{
+	width: 200px;
+	background-color: red;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.center{
+	border:1px solid #eee;
+	margin:0 200px 0 220px;
+	background-color: blue;
+
+}
+.right{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background-color: yellow;
+}
+
+img{
+	width: 80px;
+	height: 80px;
+	border:1px solid #333;
+	display: block;
+	margin:10px;
+	padding: 10px;
+}
+
+.clr{
+	clear: both;
+	content: "";
+} */
+.all{
+	margin: 20px ;
+	background-color: #eee;
+	border:1px solid #999;
+	padding: 20px;
+	overflow: auto;
+
+}
+.left{
+	width: 200px;
+	background-color: red;
+	float: left;
+}
+.center{
+	border:1px solid #eee;
+	margin:0 200px 0 220px;
+	background-color: blue;
+
+}
+.right{
+	width: 120px;
+	border: 1px solid #979797;
+	float: right;
+	overflow:auto;
+	background-color: yellow;
+}
+
+img{
+	width: 80px;
+	height: 80px;
+	border:1px solid #333;
+	display: block;
+	margin:10px;
+	padding: 10px;
+}
+	
+</style>
+</head>
+<body>
+
+	<div class="all">
+		<div class="left">
+			<img src="" alt="团队logo" >
+		</div>
+		<!-- 这里要把浮动的先写完，写了左浮动，写右浮动，再写不浮动的部分，如果，不浮动的部分
+		写在中间，会把右浮动挤下去 -->
+		<div class="right">
+			<div><img src="" alt="团队logo" ></div>
+			<div><img src="" alt="团队logo" ></div>
+			<div><img src="" alt="团队logo" ></div>
+			<div><img src="" alt="团队logo" ></div>
+		</div>
+		<div class="center">
+		<p>我是一个好男人
+		我是一个好男人我是一个好男人
+		我是一个好男人我是一个好男人我是一个好男人
+		我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人
+		我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人
+		我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人
+		我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人
+		我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人
+		我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人
+		我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人我是一个好男人
+		</p>		
+		</div>
+		
+		<div class="clr"></div>
+	</div>
+</body>
+</html>
